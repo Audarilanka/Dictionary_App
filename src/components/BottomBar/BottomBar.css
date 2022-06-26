@@ -1,0 +1,59 @@
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a a b";
+}
+
+.bottom_section1 {
+  grid-area: a;
+  background-color: #002060;
+  margin-top: 15px;
+}
+.bottom_section2 {
+  grid-area: b;
+  background-color: #002060;
+  margin-top: 15px;
+}
+
+/* bottom section3 */
+.bottombar {
+  background-color: #002060;
+}
+.bottomDetails {
+  display: flex;
+  position: relative;
+  /* top: 8rem; */
+  list-style: none;
+  margin: 0 0 20px 0;
+}
+.deatails {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  float: left;
+}
+
+/* bottom section4 */
+.logoImage2 {
+  display: flex;
+  float: left;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  /* top: 100px; */
+}
+.bottomPartcontact {
+  display: flex;
+  position: relative;
+  /* top: 100px; */
+  left: 30px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  color: rgb(169, 171, 173);
+  text-decoration: none;
+  margin: 0 0 10px 0;
+}
