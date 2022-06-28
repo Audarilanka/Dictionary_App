@@ -1,0 +1,33 @@
+/* nav bar */
+nav {
+  display: flex;
+  background-color: rgb(8, 8, 51);
+  width: auto;
+  height: 2.5rem;
+  justify-content: space-around;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  width: auto;
+  font-size: medium;
+}
+.nav-item2 {
+  /* margin-left: 100px; */
+  position: relative;
+  left: 14rem;
+}
+.nav-item3 {
+  /* margin-left: 100px; */
+  position: relative;
+  left: 8rem;
+}
+.nav-item4 {
+  /* margin-left: 100px; */
+  position: relative;
+  left: 2rem;
+}

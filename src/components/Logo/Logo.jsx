@@ -1,12 +1,13 @@
 import React from "react";
 import logo  from "../../images/download-modified.png";
 
+
 import "./Logo.css";
 
 export default function Logo() {
   return (
     <div>
-      <div className="section1">
+      <div>
         <div>
           {/* <img src={require("../images/book_groups.jpg").default} alt="logo" /> */}
 
