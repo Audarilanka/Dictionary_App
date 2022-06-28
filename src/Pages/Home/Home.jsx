@@ -1,4 +1,6 @@
 //import React from "react";
+//import searchBox  from "../../components/SearchBox/searchBox";
+
 import background from "../../images/book_stack.jpg";
 import "./Home.css";
 
@@ -9,6 +11,8 @@ export default function Home() {
         <div>
           <img src={background} alt="background" className="backgroundImage" />
         </div>
+
+        {/* <searchBox /> */}
 
         <div className="searchBar">
           <form className="form">
