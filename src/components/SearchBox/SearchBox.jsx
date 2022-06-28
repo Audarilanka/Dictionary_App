@@ -1,14 +1,12 @@
-import { useState } from "react";
+import React from "react";
+import "./SearchBox.css";
 
 export default function searchBox() {
-  const [wordInfo, setInfo] = useState({
-    word: "",
-  });
   return (
     <div>
-      <div className="searchBar section5">
+      <div className="searchBar">
         <form className="form">
-          <label className="label">
+          <label>
             <span className="english"> English</span>
             <input
               type="text"
