@@ -1,0 +1,15 @@
+/* headerBar */
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(214, 214, 214);
+  width: auto;
+  height: 1.5rem;
+  align-items: center;
+}
+.headerText {
+  color: rgb(30, 176, 212);
+  text-decoration: none;
+  font-size: small;
+  font-style: italic;
+}
