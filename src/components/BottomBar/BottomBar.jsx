@@ -1,11 +1,11 @@
-import React             from "react";
+import React from "react";
 
 import download_modified from "../../images/download-modified.png";
 import "./BottomBar.css";
 
 export default function BottomBar() {
   return (
-    <div className="container1">
+    <div className="containerBottom">
       <div className="bottom_section1">
         <span className="bottombar">
           <ul>

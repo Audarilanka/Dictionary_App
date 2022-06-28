@@ -1,28 +1,30 @@
-.container1 {
+.containerBottom {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "a a b";
+  background-color: #002060;
+  margin-top: 15px;
+  height: 11rem;
 }
 
 .bottom_section1 {
   grid-area: a;
-  background-color: #002060;
-  margin-top: 15px;
+  /* background-color: #002060; */
 }
 .bottom_section2 {
   grid-area: b;
-  background-color: #002060;
-  margin-top: 15px;
+  /* background-color: #002060; */
 }
 
 /* bottom section3 */
 .bottombar {
-  background-color: #002060;
+  /* background-color: #002060; */
 }
 .bottomDetails {
   display: flex;
   position: relative;
-  /* top: 8rem; */
+  top: 4rem;
   list-style: none;
   margin: 0 0 20px 0;
 }
@@ -39,16 +41,16 @@
 .logoImage2 {
   display: flex;
   float: left;
-  margin: 10px;
+  margin: 10px 10px 10px 80px;
   width: 50px;
   height: 50px;
   position: relative;
-  /* top: 100px; */
+  top: 4rem;
 }
 .bottomPartcontact {
   display: flex;
   position: relative;
-  /* top: 100px; */
+  top: 50px;
   left: 30px;
 
   font-family: "Times New Roman", Times, serif;
