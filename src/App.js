@@ -12,13 +12,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <div className="container">
+      <div>
         <BrowserRouter>
-          <div className="App">
-            <HeaderBar />
+          <div className="container">
+            <div className="section0">
+              <HeaderBar />
 
-            <NavBar />
-            <Logo />
+              <NavBar />
+            </div>
+
+            <div className="section1">
+              <Logo />
+            </div>
 
             <Routes>
               <Route path="/" element={<Home />} />
@@ -26,8 +31,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/help" element={<Help />} />
             </Routes>
-
-            <BottomBar />
+            <div className="section3">{<BottomBar />}</div>
           </div>
         </BrowserRouter>
         <div>{/* <span>............................</span> */}</div>
