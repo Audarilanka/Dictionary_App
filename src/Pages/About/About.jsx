@@ -1,12 +1,17 @@
 import React from "react";
-//import logo from "../components/part1/logo";
+import "./About.css";
+import book_pic from "../../images/ffc10b02-17fe-4ed2-8f06-de38ecbc62f2.png";
 
 export default function About() {
   return (
     <>
-      <div>
-        <p className="abot-paragraph">
-          dictionarylk.com provide millions of English definitions, spellings,
+      <div className="line">
+        <hr />
+      </div>
+
+      <div className="para">
+        <p className="about-paragraph">
+          Dictionarylk.com provide millions of English definitions, spellings,
           audio pronunciations, example sentences, and word origins.
           dictionarylk.com’s main, proprietary source is the Random House
           Unabridged Dictionary, which is continually updated by our team of
@@ -15,12 +20,13 @@ export default function About() {
           range of language needs.
         </p>
 
-        <p className="abot-paragraph">
+        <p className="about-paragraph">
           Language is constantly evolving, and the editorial offerings from
           Dictionary.com shine a light on how language is being used. From pop
           culture to idioms and grammar advice, there’s always something new to
           learn from lkdictionary.com.
         </p>
+        <img src={book_pic} alt="book" className="book_pic" />
       </div>
     </>
   );

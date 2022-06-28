@@ -1,0 +1,56 @@
+.contact-background {
+  background-color: rgb(223, 217, 220);
+  height: 30rem;
+  margin-top: 50px;
+}
+.contactbox {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+}
+
+.contactus {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.fullname {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  width: 230px;
+  padding-left: 200px;
+}
+.email {
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  width: 230px;
+  padding-left: 200px;
+}
+.message {
+  border: none;
+  border-radius: 10px;
+  height: 120px;
+  width: 230px;
+  padding-left: 200px;
+}
+.button {
+  position: relative;
+  top: 3rem;
+  left: 39rem;
+  color: rgb(249, 249, 250);
+  background-color: rgb(41, 41, 83);
+  height: 3rem;
+  width: 6rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
