@@ -1,0 +1,54 @@
+.straightline1 {
+  margin-top: 50px;
+}
+
+.helptitle {
+  padding: 30px;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(73, 27, 117);
+}
+.para1 {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(59, 58, 58);
+}
+.questions {
+  margin: 50px;
+}
+
+.question {
+  color: rgb(24, 156, 165);
+}
+.helpkid {
+  height: 300px;
+  position: relative;
+  left: 500px;
+}
+
+#para2 {
+  background-color: rgb(241, 234, 247);
+  padding: 50px;
+  margin-top: 10px;
+}
+#para3 {
+  background-color: rgb(223, 200, 245);
+  padding: 50px;
+}
+#para4 {
+  background-color: rgb(213, 208, 218);
+  padding: 50px;
+}
+#para5 {
+  background-color: rgb(253, 242, 252);
+  padding: 50px;
+}
+#para6 {
+  background-color: rgb(218, 233, 247);
+  padding: 50px;
+}
+#para7 {
+  background-color: rgb(171, 171, 172);
+  padding: 50px;
+}
