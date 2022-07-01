@@ -56,7 +56,7 @@ export default function BottomBar() {
             </a>
           </l1>
           <l1>
-            <a href="#" className="bottomPartcontact">
+            <a href="https://gmail.google.com" className="bottomPartcontact">
               0114564560
             </a>
           </l1>
