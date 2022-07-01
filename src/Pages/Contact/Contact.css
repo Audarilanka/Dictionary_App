@@ -1,6 +1,6 @@
 .contact-background {
-  background-color: rgb(223, 217, 220);
-  height: 30rem;
+  background-color: rgb(112, 226, 230);
+  height: 40rem;
   margin-top: 50px;
 }
 .contactbox {
@@ -44,8 +44,8 @@
 }
 .button {
   position: relative;
-  top: 3rem;
-  left: 39rem;
+  top: 1rem;
+  left: 10rem;
   color: rgb(249, 249, 250);
   background-color: rgb(41, 41, 83);
   height: 3rem;
@@ -53,4 +53,15 @@
   padding: 10px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+}
+.thanku {
+  padding: 10px 10px 10px 140px;
+  color: white;
+  background-color: blue;
+  border-radius: 3px;
+}
+.warning {
+  color: rgb(218, 50, 50);
+  font-size: small;
 }

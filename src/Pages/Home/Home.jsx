@@ -1,7 +1,13 @@
 //import React from "react";
 //import searchBox  from "../../components/SearchBox/searchBox";
+//import { React, useState } from "react";
+import { FaSearch } from "react-icons/fa";
+import background   from "../../images/book_stack.jpg";
 
-import background from "../../images/book_stack.jpg";
+
+//import background from "../../images/book_stack.jpg";
+
+//import background from "../../images/book_stack.jpg";
 import "./Home.css";
 
 export default function Home() {
@@ -11,8 +17,7 @@ export default function Home() {
         <div>
           <img src={background} alt="background" className="backgroundImage" />
         </div>
-
-        {/* <searchBox /> */}
+        {/* <div className="result-box"></div> */}
 
         <div className="searchBar">
           <form className="form">
@@ -26,7 +31,9 @@ export default function Home() {
               />
             </label>
             <div>
-              <button className="search">Search </button>
+              <button className="search">
+                <FaSearch size="30px" />
+              </button>
             </div>
           </form>
         </div>
