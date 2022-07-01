@@ -1,12 +1,5 @@
 /* backgroundImage */
-.backgroundImage {
-  display: flex;
-  margin-top: 3rem;
-  width: 84.25rem;
-  height: 47.5rem;
-  position: relative;
-  z-index: 1;
-}
+
 /* grid */
 /* .container {
   display: grid;
