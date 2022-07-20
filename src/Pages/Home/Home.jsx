@@ -8,64 +8,94 @@ import "./Home.css";
 export default function Home() {
   const [value, setValue] = useState([
     {
-      id: 5,
-      first_name: "Rabbi",
-      last_name: "Goggan",
-      email: "rgoggan4@last.fm",
+      word: "A bed of roses",
+      meaning:
+        "a phrase used to reference a situation that is easy or comfortable",
+      pic: "",
     },
     {
-      id: 6,
-      first_name: "Marina",
-      last_name: "Hannond",
-      email: "mhannond5@meetup.com",
+      word: "A Priori",
+      meaning:
+        "something that is believed to be true without actual reinforcement with facts or statistics",
+      pic: "",
     },
     {
-      id: 7,
-      first_name: "Miquela",
-      last_name: "Lief",
-      email: "mlief6@skyrock.com",
+      word: "Aardvark",
+      meaning:
+        "a large, long-eared nocturnal animal that uses its long tongue to eat ants and termites",
+      pic: "",
     },
     {
-      id: 8,
-      first_name: "Nata",
-      last_name: "Corless",
-      email: "ncorless7@creativecommons.org",
+      word: "Aback ",
+      meaning: "in amazement; shocked",
+      pic: "",
     },
     {
-      id: 9,
-      first_name: "Rivkah",
-      last_name: "Hedditch",
-      email: "rhedditch8@blogs.com",
+      word: "Abaft",
+      meaning: "toward the stern; behind",
+      pic: "",
     },
     {
-      id: 10,
-      first_name: "Loren",
-      last_name: "Yurshev",
-      email: "lyurshev9@liveinternet.ru",
+      word: "Abandon",
+      meaning: "to stop caring and leave or to desert",
+      pic: "",
     },
     {
-      id: 11,
-      first_name: "Moishe",
-      last_name: "MacAree",
-      email: "mmacareea@mlb.com",
+      word: "Abase",
+      meaning: "to lower so as to hurt feelings",
+      pic: "",
     },
     {
-      id: 12,
-      first_name: "Bertrand",
-      last_name: "Garken",
-      email: "bgarkenb@marriott.com",
+      word: "Abaser",
+      meaning: "someone who degrades or lowers someone",
+      pic: "",
     },
     {
-      id: 13,
-      first_name: "Dudley",
-      last_name: "Merrigan",
-      email: "dmerriganc@unicef.org",
+      word: "Abash",
+      meaning: "to humiliate someone and make them feel embarrassed or ashamed",
+      pic: "",
     },
     {
-      id: 14,
-      first_name: "Dwain",
-      last_name: "O'Duilleain",
-      email: "doduilleaind@instagram.com",
+      word: "Abate",
+      meaning: "to reduce in degree or intensity",
+      pic: "",
+    },
+    {
+      word: "Abatement",
+      meaning: "reduction or weakening or something",
+      pic: "",
+    },
+    {
+      word: "Abattoir",
+      meaning: "a place where animals are taken to slaughter",
+      pic: "",
+    },
+    {
+      word: "Abbess",
+      meaning: "the female superior of a community of nuns",
+      pic: "",
+    },
+    {
+      word: "Abbreviate",
+      meaning: "to shorten a word or phrase",
+      pic: "",
+    },
+    {
+      word: "Abdicate",
+      meaning:
+        "to stop accepting a particular responsibility or obligation that you have",
+      pic: "",
+    },
+    {
+      word: "Abdominal",
+      meaning:
+        "related to the abdomen/stomach, or the part between the thorax and the pelvis",
+      pic: "",
+    },
+    {
+      word: "Abduct",
+      meaning: "to grab an individual by trickery or force",
+      pic: "",
     },
   ]);
   const [filtereddata, setFiltereddata] = useState([]);
@@ -75,7 +105,7 @@ export default function Home() {
     const searchWorld = Event.target.value;
     setWordEnterd(searchWorld);
     const newFilter = value.filter((value) => {
-      return value.first_name.toLowerCase().includes(searchWorld.toLowerCase());
+      return value.word.toLowerCase().includes(searchWorld.toLowerCase());
     });
 
     if (searchWorld === "") {
@@ -96,7 +126,7 @@ export default function Home() {
         <div>
           <img src={background} alt="background" className="backgroundImage" />
         </div>
-        {/* <div className="result-box"></div> */}
+         <div id="result" className="result-box"></div> 
 
         <div className="searchBar">
           <form className="form">
@@ -114,9 +144,9 @@ export default function Home() {
             <div>
               <button className="search">
                 {filtereddata.length === 0 ? (
-                  <SearchIcon />
+                  <SearchIcon className="click" />
                 ) : (
-                  <CloseIcon onClick={clearInput} />
+                  <CloseIcon className="click" onClick={clearInput} />
                 )}
               </button>
             </div>
@@ -126,8 +156,8 @@ export default function Home() {
           <div className="dropdown">
             {filtereddata.slice(0, 10).map((value, key) => {
               return (
-                <a className="dropdownrow" href="google.com" target="_blank">
-                  <p>{value.first_name}</p>
+                <a className="dropdownrow" href="#result">
+                  <p>{value.word}</p>
                 </a>
               );
             })}
