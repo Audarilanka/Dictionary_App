@@ -82,8 +82,11 @@
 .dropdownrow {
   color: black;
   text-decoration: none;
-  box-shadow: rgb(54, 54, 54);
+  box-shadow: rgb(253, 253, 253);
   overflow: hidden;
   overflow-y: auto;
   cursor: pointer;
+}
+.click {
+  height: 50px;
 }
