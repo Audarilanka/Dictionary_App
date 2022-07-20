@@ -8,8 +8,16 @@ import Help                             from "./Pages/Help/Help";
 import BottomBar                        from "./components/BottomBar/BottomBar";
 import Logo                             from "./components/Logo/Logo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Data }                         from "./Data";
+import { useEffect, useState }          from "react";
 
 function App() {
+  // const [data, setData] = useState(0);
+  // useEffect(() => {
+  //   console.log("Occurs ONCE, AFTER the initial render.");
+  //   setData(Data);
+  // }, []);
+
   return (
     <>
       <div>
@@ -33,6 +41,7 @@ function App() {
             </Routes>
             <div className="section3">{<BottomBar />}</div>
           </div>
+          {/* {console.log(data[0])} */}
         </BrowserRouter>
         <div>{/* <span>............................</span> */}</div>
       </div>
