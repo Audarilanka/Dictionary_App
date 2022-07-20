@@ -7,13 +7,14 @@
   z-index: 1;
 }
 .result-box {
-  background-color: rgb(165, 170, 170);
-  height: 415.5px;
+  background-color: white;
+  height: 420px;
   width: 1200px;
   z-index: 2;
   position: absolute;
   top: 35rem;
   margin-left: 70px;
+  color: blueviolet;
 }
 
 /* search bar */
@@ -30,14 +31,15 @@
   float: left;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+
   /* position: absolute; 
         top: 30rem;
         left: 30rem; */
 }
 .word {
   display: flex;
-  width: 250%;
-  height: 97%;
+  width: 420px;
+  height: 71px;
   position: absolute;
   top: auto;
   left: 10.4rem;
@@ -47,15 +49,26 @@
 }
 .search {
   position: absolute;
-  top: 0rem;
-  left: 36.5rem;
-  width: 100%;
-  height: 99.5%;
+
+  left: 36.9rem;
+  width: 150px;
+  height: 73px;
   background-color: rgb(93, 255, 255);
   border: none;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
+}
+
+.warning {
+  background-color: rgb(251, 255, 255);
+  height: 20px;
+  width: 150px;
+  position: absolute;
+  top: 100px;
+  font-size: 10px;
+  font-weight: 500;
+  padding-left: 20px;
 }
 /* ................................. */
 /* @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
