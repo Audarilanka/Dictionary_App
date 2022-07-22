@@ -83,7 +83,7 @@
   width: 300px;
   height: 200px;
   background-color: white;
-  box-shadow: rgb(54, 54, 54);
+  box-shadow: rgb(122, 122, 128);
   overflow: hidden;
   overflow-y: auto;
   cursor: pointer;
@@ -91,6 +91,9 @@
 }
 .dropdown::-webkit-scrollbar {
   display: none;
+}
+a:hover {
+  background-color: lightgrey;
 }
 .dropdownrow {
   color: black;
