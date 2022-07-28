@@ -8,13 +8,35 @@
 }
 .result-box {
   background-color: white;
-  height: 420px;
-  width: 1200px;
+  height: 390px;
+  width: 1000px;
   z-index: 2;
   position: absolute;
   top: 35rem;
-  margin-left: 70px;
-  color: blueviolet;
+  margin-left: 150px;
+  color: rgb(53, 36, 70);
+  padding: 20px;
+  border: black;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-area: "a" "b";
+}
+
+.meaning {
+  padding: 10px;
+  background-color: rgb(218, 223, 228);
+  text-decoration: none;
+}
+.value {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  padding: 10px;
+}
+
+.YourSearch {
+  color: blue;
+  font-style: italic;
 }
 
 /* search bar */
@@ -23,6 +45,8 @@
   top: 25rem;
   left: 18rem;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .english {
@@ -77,31 +101,49 @@
 /* ..................... */
 .dropdown {
   position: absolute;
-  top: 30rem;
-  left: 30rem;
-  margin-top: 1px;
+  top: 5rem;
+  left: 15rem;
+  margin-top: 5px;
   width: 300px;
-  height: 200px;
+  height: auto;
   background-color: white;
   box-shadow: rgb(122, 122, 128);
   overflow: hidden;
   overflow-y: auto;
   cursor: pointer;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  font-weight: 500;
+}
+.dropdown:empty {
+  border: none;
 }
 .dropdown::-webkit-scrollbar {
   display: none;
 }
-a:hover {
-  background-color: lightgrey;
+div.dropdownrow:hover {
+  background-color: rgb(222, 228, 228);
 }
+
 .dropdownrow {
+  /* background-color: rgb(209, 205, 205); */
   color: black;
   text-decoration: none;
   box-shadow: rgb(253, 253, 253);
   overflow: hidden;
   overflow-y: auto;
   cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
+  padding: 5px;
+}
+input {
+  width: 220px;
+}
+.search-inner {
+  display: flex;
 }
 .click {
   height: 50px;
