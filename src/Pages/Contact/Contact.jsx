@@ -54,9 +54,9 @@ export default function Contact() {
                     className="fullname"
                     placeholder="Full Name"
                   />
-                  {submited && !values.fullname ? (
-                    <p className="warning">Please Enter your Full Name </p>
-                  ) : null}
+                  {/* {submited && !values.fullname ? (
+                    <div className="warning">Please Enter your Full Name </div>
+                  ) : null} */}
                 </p>
                 <p>
                   <input
@@ -68,9 +68,9 @@ export default function Contact() {
                     className="email"
                     placeholder="Email"
                   />
-                  {submited && !values.email ? (
+                  {/* {submited && !values.email ? (
                     <p className="warning">Please Enter a Email Addres </p>
-                  ) : null}
+                  ) : null} */}
                 </p>
                 <p>
                   <input
@@ -82,9 +82,9 @@ export default function Contact() {
                     className="message"
                     placeholder="Message"
                   />
-                  {submited && !values.message ? (
+                  {/* {submited && !values.message ? (
                     <p className="warning">Please Enter your Message </p>
-                  ) : null}
+                  ) : null} */}
                 </p>
               </label>
               <button type="submit" className="button">
