@@ -1,32 +1,32 @@
 .containerBottom {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "a a b";
+  grid-template-columns: 1fr 2fr 0.3fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "a b x y " "e f g d";
   background-color: #002060;
   margin-top: 15px;
   height: 11rem;
 }
 
 .bottom_section1 {
-  grid-area: a;
-  /* background-color: #002060; */
+  grid-area: e;
 }
 .bottom_section2 {
-  grid-area: b;
-  /* background-color: #002060; */
+  grid-area: d;
+}
+.bottom_section3 {
+  grid-area: g;
 }
 
 /* bottom section3 */
-.bottombar {
-  /* background-color: #002060; */
-}
+
 .bottomDetails {
   display: flex;
-  position: relative;
-  top: 4rem;
+  margin: 4%;
+  padding: 3%;
+
   list-style: none;
-  margin: 0 0 20px 0;
+  justify-content: left;
 }
 .deatails {
   color: white;
@@ -34,28 +34,119 @@
   display: flex;
   font-size: 80%;
   font-family: "Times New Roman", Times, serif;
-  float: left;
 }
 
 /* bottom section4 */
 .logoImage2 {
   display: flex;
-  float: left;
-  margin: 10px 10px 10px 80px;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 4rem;
+  height: 45%;
+  margin-right: 2%;
 }
 .bottomPartcontact {
   display: flex;
-  position: relative;
-  top: 50px;
-  left: 30px;
 
   font-family: "Times New Roman", Times, serif;
 
   color: rgb(169, 171, 173);
   text-decoration: none;
-  margin: 0 0 10px 0;
+}
+@media (min-width: 992px) {
+  .containerBottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.3fr 1fr;
+    grid-template-rows: 1.2fr 1.8fr;
+    grid-template-areas: "a b x y " "e f g d";
+    background-color: #002060;
+    margin-top: 15px;
+    height: 11rem;
+  }
+
+  .bottom_section1 {
+    grid-area: e;
+  }
+  .bottom_section2 {
+    grid-area: d;
+  }
+  .bottom_section3 {
+    grid-area: g;
+  }
+}
+@media (min-width: 565px) and (max-width: 991px) {
+  .containerBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.3fr 1fr;
+    grid-template-rows: 1.2fr 1.8fr;
+    grid-template-areas: "a b x y " "e f g d";
+    background-color: #002060;
+    margin-top: 15px;
+    height: 11rem;
+  }
+
+  .bottom_section1 {
+    grid-area: e;
+  }
+  .bottom_section2 {
+    grid-area: d;
+  }
+  .bottom_section3 {
+    grid-area: g;
+  }
+  .logoImage2 {
+    height: 45px;
+    width: 45px;
+  }
+}
+@media (min-width: 351px) and (max-width: 565px) {
+  .containerBottom {
+    display: grid;
+    grid-template-columns: 1.5fr 0.4fr 1fr;
+    grid-template-rows: 1.2fr 1.8fr;
+    grid-template-areas: "a x y " "e g d";
+    background-color: #002060;
+    margin-top: 15px;
+    height: 11rem;
+  }
+
+  .bottom_section1 {
+    grid-area: e;
+    font-size: 70%;
+  }
+  .bottom_section2 {
+    grid-area: d;
+    font-size: 75%;
+  }
+  .bottom_section3 {
+    grid-area: g;
+  }
+  .logoImage2 {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .containerBottom {
+    display: grid;
+    grid-template-columns: 0.6fr 0.3fr 0.6fr;
+    grid-template-rows: 1.2fr 1.8fr;
+    grid-template-areas: "a x y " "e g d";
+    background-color: #002060;
+    margin-top: 15px;
+    height: 11rem;
+  }
+
+  .bottom_section1 {
+    grid-area: e;
+    font-size: 60%;
+  }
+  .bottom_section2 {
+    grid-area: d;
+    font-size: 70%;
+  }
+  .bottom_section3 {
+    grid-area: g;
+  }
+  .logoImage2 {
+    height: 40px;
+    width: 40px;
+  }
 }

@@ -1,16 +1,48 @@
+.about-container {
+  display: grid;
+  grid-template-rows: minmax(1fr, auto);
+  grid-template-areas: "item";
+  /* "a" "b" "c"; */
+}
+
 .line {
-  margin-top: 70px;
+  margin-top: 0;
 }
 
 .para {
-  margin: 50px 30px 50px 30px;
+  margin: 5% 3% 5% 3%;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(70, 68, 68);
-  padding: 10px;
+  padding: 3%;
 }
 .book_pic {
-  height: 300px;
-  justify-content: center;
-  position: relative;
-  left: 350px;
+  height: 15rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .about-container {
+    display: grid;
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: "item";
+    /* "a" "b" "c"; */
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-container {
+    display: grid;
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: "item";
+    /* "a" "b" "c"; */
+  }
+}
+@media (max-width: 767px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: "item";
+    /* "a" "b" "c"; */
+  }
 }

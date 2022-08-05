@@ -1,5 +1,4 @@
-import React    from "react";
-
+import React from "react";
 
 import "./NavBar.css";
 
@@ -9,17 +8,17 @@ export default function NavBar() {
   return (
     <div>
       <nav className="navbar">
-        <Link to="/" className="nav-links">
-          <li className="nav-item1">Dictionary</li>
+        <Link to="/" className="nav-links l1">
+          <li className="nav-item dic">Dictionary</li>
         </Link>
-        <Link to="/abot" className="nav-links">
-          <li className="nav-item2">Abot Us</li>
+        <Link to="/abot" className="nav-links l2">
+          <li className="nav-item">Abot Us</li>
         </Link>
-        <Link to="/contact" className="nav-links">
-          <li className="nav-item3">Contact</li>
+        <Link to="/contact" className="nav-links l3">
+          <li className="nav-item">Contact</li>
         </Link>
-        <Link to="/help" className="nav-links">
-          <li className="nav-item4">Help</li>
+        <Link to="/help" className="nav-links l4">
+          <li className="nav-item">Help</li>
         </Link>
       </nav>
     </div>

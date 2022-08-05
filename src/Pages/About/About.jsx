@@ -4,12 +4,12 @@ import book_pic from "../../images/ffc10b02-17fe-4ed2-8f06-de38ecbc62f2.png";
 
 export default function About() {
   return (
-    <>
-      <div className="line">
+    <div className="about-container">
+      <div className="line item">
         <hr />
       </div>
 
-      <div className="para">
+      <div className="para item">
         <p className="about-paragraph">
           Dictionarylk.com provide millions of English definitions, spellings,
           audio pronunciations, example sentences, and word origins.
@@ -26,8 +26,8 @@ export default function About() {
           culture to idioms and grammar advice, there’s always something new to
           learn from lkdictionary.com.
         </p>
-        <img src={book_pic} alt="book" className="book_pic" />
       </div>
-    </>
+      <img src={book_pic} alt="book" className="book_pic item" />
+    </div>
   );
 }

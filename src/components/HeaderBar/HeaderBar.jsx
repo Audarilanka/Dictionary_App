@@ -3,11 +3,11 @@ import "./HeaderBar.css";
 
 export default function HeaderBar() {
   return (
-    <div>
-      <span className="header">
+    <div className="header">
+      <span>
         <a
           className="headerText"
-          href="https://www.google.com/"
+          href="http://localhost:3000/abot"
           target="_blank"
           rel="noreferrer"
         >

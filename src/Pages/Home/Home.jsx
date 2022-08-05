@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import "./Home.css";
+
 import background1 from "../../images/book_stack.jpg";
 import background2 from "../../images/books-bob-deca-slide.jpg";
 import background3 from "../../images/1586857293-pexels-photo-590493.jpeg";
@@ -8,8 +10,16 @@ import background5 from "../../images/library-b694b8c4b0334227a4d614158cc1deb6.j
 import background6 from "../../images/photo-1521410396661-220864cbc37d.jpg";
 import background7 from "../../images/66666.jpg";
 
-//import SearchIcon from "@mui/icons-material/Search";
-import "./Home.css";
+// const background1 = new URL(
+//   "../../images/book_stack - Copy.jpg",
+//   import.meta.url
+// );
+
+// const background7 = {
+//   backgroundImage: new URL("../../images/66666.jpg", import.meta.url),
+// };
+
+import SearchIcon from "@mui/icons-material/Search";
 
 export default function Home() {
   const images = [
@@ -20,6 +30,7 @@ export default function Home() {
     background5,
     background6,
     background7,
+    //background8,
   ];
 
   const [background, setBackground] = React.useState(0);
@@ -143,7 +154,7 @@ export default function Home() {
     const searchTerm = value.toLowerCase();
     const word = list_item.words.toLowerCase();
     if (word === searchTerm)
-      return <li key={list_item.words}>{list_item.meaning}</li>;
+      return <div key={list_item.words}>{list_item.meaning}</div>;
   }
 
   const handdleWord = (Event) => {
@@ -153,61 +164,66 @@ export default function Home() {
   };
 
   return (
-    <>
-      <div>
-        {/* <img src={background1} alt="background" className="backgroundImage" /> */}
+    <div
+      style={{ backgroundImage: `url(${images[background]})` }}
+      className="home-container"
+    >
+      {/* <div className="background">
         <img src={images[background]} alt="img" className="backgroundImage" />
-      </div>
+      </div> */}
 
       <div className="searchBar">
-        <div className="search-inner">
-          {/* {word && ok ? <div className="message"> {word}hello</div> : null} */}
+        <div className="english">
+          <p className="eng">English</p>
+        </div>
 
-          <span className="english"> English</span>
-          <input
-            type="text"
-            placeholder="Search LK Advanced Learner’s Dictionary"
-            className="word"
-            value={value}
-            onChange={handdleWord}
-          />
-          {ok && !value ? (
-            <div className="warning">Please Enter a word !</div>
-          ) : null}
+        <input
+          type="text"
+          placeholder="Search LK Advanced Learner’s Dictionary"
+          className="word"
+          value={value}
+          onChange={handdleWord}
+        />
 
-          <button className="search" onClick={() => onSearch(value)}>
-            Search
-          </button>
-          <div className="dropdown">
-            {List.filter((item) => {
-              const searchTerm = value.toLowerCase();
-              const word = item.words.toLowerCase();
-              return (
-                searchTerm && word.startsWith(searchTerm) && word !== searchTerm
-              );
-            })
-              .slice(0, 10)
-              .map((item) => (
-                <div
-                  onClick={() => onSearch(item.words)}
-                  className="dropdownrow"
-                >
-                  <a className="dropdownlink">{item.words}</a>
-                </div>
-              ))}
-          </div>
+        {/* {ok && !value ? (
+          <div className="warning">Please Enter a word !</div>
+        ) : null} */}
+
+        <button className="search" onClick={() => onSearch(value)}>
+          <SearchIcon />
+        </button>
+        {/* <div>.................</div> */}
+        <div className="dropdown">
+          {List.filter((item) => {
+            const searchTerm = value.toLowerCase();
+            const word = item.words.toLowerCase();
+            return (
+              searchTerm && word.startsWith(searchTerm) && word !== searchTerm
+            );
+          })
+            .slice(0, 10)
+            .map((item) => (
+              <div onClick={() => onSearch(item.words)} className="dropdownrow">
+                <a className="dropdownlink">{item.words}</a>
+              </div>
+            ))}
         </div>
       </div>
-      {/* <div className="result-box">{<ul>{List.map(showEntry)}</ul>}</div> */}
+
       {ok && value ? (
         <div className="result-box">
-          <p className="YourSearch">Your Search</p>
-          <p className="value">{value}</p>
-          <hr className="hr" />
-          <p className="YourSearch ">Meaning of {value} in English</p>
-          {ok && <ul className="meaning">{List.map(showEntry)}</ul>}
+          <div className="YourSearch rb">You are Searching</div>
+          <div className="value rb ">{value}</div>
+
+          <div>
+            <hr className="hr rb" />
+          </div>
+          <div className="ys">
+            <p className="YourSearch rb">Meaning of {value} in English</p>
+            {ok && <div className="meaning rb">{List.map(showEntry)}</div>}
+          </div>
         </div>
       ) : null}
-    </>
+    </div>
   );
 }
