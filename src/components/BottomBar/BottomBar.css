@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr 0.3fr 1fr;
   grid-template-rows: 1fr 2fr;
-  grid-template-areas: "a b x y " "e f g d";
+  grid-template-areas: "a b x d " "e f g d";
   background-color: #002060;
   margin-top: 15px;
   height: 11rem;

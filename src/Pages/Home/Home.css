@@ -189,6 +189,7 @@ input {
   .word {
     grid-area: p;
     width: 95.5%;
+    font-size: 65%;
   }
   .search {
     grid-area: s;
@@ -224,6 +225,7 @@ input {
   }
   .word {
     width: 96%;
+    font-size: 70%;
   }
 }
 @media (min-width: 650px) and (max-width: 991px) {
