@@ -1,5 +1,4 @@
-import React   from "react";
-
+import React from "react";
 
 import "./Help.css";
 
@@ -7,7 +6,7 @@ import helpkid from "../../images/205-2054169_support-icon-png-for-kids-can-i-he
 
 export default function Help() {
   return (
-    <>
+    <div className="help-container">
       <div className="straightline1">
         <hr />
       </div>
@@ -67,7 +66,7 @@ export default function Help() {
       </ul>
 
       <img src={helpkid} alt="?" className="helpkid" />
-      <div>
+      <div className="paragraph">
         <p id="para2">
           <b>How are words added to the dictionary?</b>
           <br /> We have a team of lexicographers who are always on the lookout
@@ -122,6 +121,6 @@ export default function Help() {
           Proficiency
         </p>
       </div>
-    </>
+    </div>
   );
 }

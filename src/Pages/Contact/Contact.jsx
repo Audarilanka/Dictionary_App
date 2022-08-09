@@ -32,71 +32,58 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <div>
-        <div className="contact-background">
-          <p className="contactus">
-            <b>Contact Us</b>
-          </p>
-          <div className="contactbox">
-            <form onSubmit={handleSubmit}>
-              {submited && vaild ? (
-                <div className="thanku">We got it.Thank you!</div>
-              ) : null}
-              <label>
-                <p>
-                  <input
-                    // disabled={submited}
-                    onChange={handleFullnameInputChange}
-                    value={values.fullname}
-                    type="text"
-                    fullname="fullname"
-                    className="fullname"
-                    placeholder="Full Name"
-                  />
-                  {submited && !values.fullname ? (
-                    <p className="warning">Please Enter your Full Name </p>
-                  ) : null}
-                </p>
-                <p>
-                  <input
-                    // disabled={submited}
-                    onChange={handleEmailInputChange}
-                    value={values.email}
-                    type="text"
-                    email="email"
-                    className="email"
-                    placeholder="Email"
-                  />
-                  {submited && !values.email ? (
-                    <p className="warning">Please Enter a Email Addres </p>
-                  ) : null}
-                </p>
-                <p>
-                  <input
-                    // disabled={submited}
-                    onChange={handleMessageInputChange}
-                    value={values.message}
-                    type="text"
-                    message="message"
-                    className="message"
-                    placeholder="Message"
-                  />
-                  {submited && !values.message ? (
-                    <p className="warning">Please Enter your Message </p>
-                  ) : null}
-                </p>
-              </label>
-              <button type="submit" className="button">
-                submit
-              </button>
-            </form>
-          </div>
-          {/* <button type="submit" className="button" onSubmit={handleSubmit}>
-            Submit
-          </button> */}
-        </div>
+    <div className="contact-container">
+      <div className="box">
+        <p className="contactus">Contact Us</p>
+        {/* <form className="form" onSubmit={handleSubmit}> */}
+        {submited && vaild ? (
+          <div className="thanku">We got it.Thank you!</div>
+        ) : null}
+
+        <input
+          // disabled={submited}
+          onChange={handleFullnameInputChange}
+          value={values.fullname}
+          type="text"
+          fullname="fullname"
+          className="fullname i"
+          placeholder="Full Name"
+        />
+        {submited && !values.fullname ? (
+          <p className="warning1 w">Please Enter your Full Name </p>
+        ) : null}
+
+        <input
+          // disabled={submited}
+          onChange={handleEmailInputChange}
+          value={values.email}
+          type="text"
+          email="email"
+          className="email i"
+          placeholder="Email"
+        />
+        {submited && !values.email ? (
+          <p className="warning2 w">Please Enter a Email Addres </p>
+        ) : null}
+
+        <input
+          // disabled={submited}
+          onChange={handleMessageInputChange}
+          value={values.message}
+          type="text"
+          message="message"
+          className="message i"
+          placeholder="Message"
+        />
+
+        {submited && !values.message ? (
+          <p className="warning3 w">Please Enter your Message </p>
+        ) : null}
+
+        <button type="submit" className="button" onClick={handleSubmit}>
+          submit
+        </button>
       </div>
-    </>
+    </div>
   );
 }
