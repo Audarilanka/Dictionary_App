@@ -11,8 +11,8 @@ export default function NavBar() {
         <Link to="/" className="nav-links l1">
           <li className="nav-item dic">Dictionary</li>
         </Link>
-        <Link to="/abot" className="nav-links l2">
-          <li className="nav-item">Abot Us</li>
+        <Link to="/about" className="nav-links l2">
+          <li className="nav-item">About Us</li>
         </Link>
         <Link to="/contact" className="nav-links l3">
           <li className="nav-item">Contact</li>
