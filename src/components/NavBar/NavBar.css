@@ -1,5 +1,10 @@
 /* nav bar */
-.navbar {
+.navbar1 {
+  display: flex;
+  background-color: rgb(8, 8, 51);
+  width: auto;
+  height: 3rem;
+  justify-content: space-around;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
   grid-template-areas: "a b c d e ";
@@ -16,13 +21,7 @@
 .l4 {
   grid-area: e;
 }
-nav {
-  display: flex;
-  background-color: rgb(8, 8, 51);
-  width: auto;
-  height: 2.5rem;
-  justify-content: space-around;
-}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -33,14 +32,26 @@ nav {
   width: auto;
   font-size: medium;
 }
+.add {
+  background-color: transparent;
+  height: 60%;
+  width: 70%;
+  border-radius: 1px;
+
+  border-color: rgb(190, 194, 194);
+  color: rgb(168, 173, 173);
+}
+.add:hover {
+  background-color: white;
+}
 .dic {
   margin-left: 2%;
 }
 @media (min-width: 992px) {
-  .navbar {
+  .navbar1 {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-template-areas: "a b c d e ";
+    grid-template-columns: 1fr 3fr 0.7fr 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: "a b c d e f";
   }
   .l1 {
     grid-area: a;
@@ -53,13 +64,16 @@ nav {
   }
   .l4 {
     grid-area: e;
+  }
+  .l5 {
+    grid-area: f;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .navbar {
+  .navbar1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "a c d e ";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a c d e f";
   }
   .l1 {
     grid-area: a;
@@ -72,13 +86,16 @@ nav {
   }
   .l4 {
     grid-area: e;
+  }
+  .l5 {
+    grid-area: f;
   }
 }
 @media (max-width: 767px) {
-  .navbar {
+  .navbar1 {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr;
-    grid-template-areas: "a c d e ";
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a c d e f";
   }
   .l1 {
     grid-area: a;
@@ -91,6 +108,9 @@ nav {
   }
   .l4 {
     grid-area: e;
+  }
+  .l5 {
+    grid-area: f;
   }
   .nav-links {
     font-size: small;
