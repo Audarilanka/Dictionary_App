@@ -1,52 +1,43 @@
 import "./App.css";
+import React from "react";
 import HeaderBar from "./components/HeaderBar/HeaderBar";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./Pages/Home/Home";
+import Add from "./Pages/Addword/Add";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Help from "./Pages/Help/Help";
+//import Add from "./Pages/Add/Add";
+//import ex from "./Pages/Add/ex";
+//import AddWord from "./Pages/Add/AddWord";
+//import Delete from "./Pages/Add/Delete";
+
 import BottomBar from "./components/BottomBar/BottomBar";
 import Logo from "./components/Logo/Logo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+//import { getTopic, getResource, getTopics } from "./api";
 //import { Data } from "./Data";
 //import { useEffect, useState } from "react";
 
-function App() {
-  // const [data, setData] = useState(0);
-  // useEffect(() => {
-  //   console.log("Occurs ONCE, AFTER the initial render.");
-  //   setData(Data);
-  // }, []);
-
+export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <div>
-        <BrowserRouter>
-          <div>
-            <div>
-              <HeaderBar />
+        <HeaderBar />
+        <NavBar />
+        <div>
+          <Logo />
+        </div>
 
-              <NavBar />
-            </div>
-
-            <div>
-              <Logo />
-            </div>
-
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/help" element={<Help />} />
-            </Routes>
-            <div>{<BottomBar />}</div>
-          </div>
-          {/* {console.log(data[0])} */}
-        </BrowserRouter>
-        <div>{/* <span>............................</span> */}</div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/add/*" element={<Add />} />
+        </Routes>
       </div>
-    </>
+      <div>{<BottomBar />}</div>
+    </BrowserRouter>
   );
 }
-
-export default App;
