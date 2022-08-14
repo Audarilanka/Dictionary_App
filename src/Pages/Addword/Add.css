@@ -1,0 +1,233 @@
+.add-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr;
+  grid-template-areas: "a b c" "d e f" "g h i";
+  background-color: rgb(233, 233, 233);
+}
+.topictoadd {
+  grid-area: e;
+  display: flex;
+  background-color: rgb(89, 89, 245);
+  width: auto;
+  height: 3rem;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.ADD-YOUR-WORD {
+  grid-area: b;
+}
+.internal {
+  grid-area: h;
+}
+.topicName {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  width: auto;
+  font-size: medium;
+}
+.tp {
+  font-style: italic;
+  color: rgb(10, 10, 10);
+  padding: 5% 5% 0% 5%;
+}
+.td {
+  font-size: 100%;
+  padding: 5%;
+}
+.addnew {
+  color: rgb(179, 137, 48);
+  /* padding-left: 5%; */
+  font-size: 120%;
+  font-weight: 400;
+}
+.any-msg {
+  color: rgb(179, 137, 48);
+  font-size: 110%;
+  font-weight: 300;
+  padding-bottom: 2%;
+}
+.addbox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr 1fr 0.5fr 0.5fr 1fr 0.7fr 0.7fr;
+  grid-template-areas:
+    "1 "
+    "2 "
+    "3 "
+    "4 "
+    "5 "
+    "6 "
+    "7 "
+    "8 "
+    "9"
+    "10";
+}
+.addnew {
+  grid-area: 1;
+}
+.thanku {
+  grid-area: 2;
+}
+.newWord {
+  grid-area: 3;
+}
+.warning1 {
+  grid-area: 4;
+}
+.neWmeaning {
+  grid-area: 5;
+}
+.warning2 {
+  grid-area: 6;
+}
+.any-msg {
+  grid-area: 7;
+}
+.neWmessage {
+  grid-area: 8;
+}
+.warning3 {
+  grid-area: 9;
+}
+.btn {
+  grid-area: 10;
+}
+
+.ADD-YOUR-WORD {
+  display: flex;
+  justify-content: center;
+  margin: 15% 5% 5% 5%;
+
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 20px; */
+}
+.y {
+  display: flex;
+  border: black;
+  border-radius: 5px;
+  width: 95%;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0 auto;
+}
+.btn {
+  color: rgb(249, 249, 250);
+  background-color: rgb(17, 17, 19);
+  margin-bottom: 10%;
+  padding: 2%;
+  border-radius: 2%;
+  width: 30%;
+  border: none;
+  cursor: pointer;
+}
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+.thanks {
+  padding: 2%;
+  color: white;
+  background-color: rgb(57, 122, 117);
+  border-radius: 2%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+.ww {
+  color: rgb(218, 50, 50);
+  font-size: small;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dlt-title {
+  color: rgb(214, 58, 58);
+  font-size: 110%;
+  font-weight: 400;
+  grid-area: A;
+  padding-bottom: 5%;
+}
+.deleteaword {
+  display: flex;
+  /* height: 50%; */
+  border: black;
+  border-radius: 0;
+  width: 90%;
+  float: left;
+  grid-area: C;
+}
+.dltbtn {
+  grid-area: D;
+  color: rgb(249, 249, 250);
+  background-color: rgb(172, 33, 15);
+  /* margin-bottom: 0%; */
+  padding: 2%;
+  border-radius: 2%;
+  width: 70%;
+  border: none;
+  cursor: pointer;
+}
+.Delete-box {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: " A A" "C D " "E E";
+}
+
+@media (min-width: 992px) and (max-width: 1366px) {
+  .add-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 5fr;
+    grid-template-areas: "a b c" "d e f" "g h i";
+    background-color: rgb(233, 233, 233);
+  }
+}
+@media (min-width: 633px) and (max-width: 991px) {
+  .add-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 5fr;
+    grid-template-areas: "a b c" "d e f" "g h i";
+    background-color: rgb(233, 233, 233);
+  }
+
+  .Delete-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1.5fr 0.8fr 1fr;
+    grid-template-areas: " A A" "C D " "E E";
+  }
+}
+@media (max-width: 632px) {
+  .add-container {
+    display: grid;
+    grid-template-columns: 0.3fr 8fr 0.3fr;
+    grid-template-rows: 0.5fr 0.5fr 5fr;
+    grid-template-areas: "a b c" "d e f" "g h i";
+    background-color: rgb(233, 233, 233);
+  }
+  .Delete-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr 1fr;
+    grid-template-areas: " A A" "C D " "E E";
+  }
+}
+@media (min-width: 1367px) {
+  .add-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 5fr;
+    grid-template-areas: "a b c" "d e f" "g h i";
+    background-color: rgb(233, 233, 233);
+  }
+}
