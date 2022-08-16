@@ -10,7 +10,7 @@ const Delete = () => {
       </div>
       <input
         type="text"
-        placeholder="What do you want delete."
+        placeholder="What do you want to delete"
         className="deleteaword"
         //value={value}
         //onChange={handdleWord}
