@@ -3,7 +3,11 @@
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 5fr;
   grid-template-areas: "a b c" "d e f" "g h i";
-  background-color: rgb(233, 233, 233);
+  background: linear-gradient(
+    90deg,
+    rgb(236, 235, 245) 0%,
+    rgb(151, 140, 140) 100%
+  );
 }
 .topictoadd {
   grid-area: e;
@@ -48,7 +52,7 @@
 .any-msg {
   color: rgb(179, 137, 48);
   font-size: 110%;
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 2%;
 }
 .addbox {
