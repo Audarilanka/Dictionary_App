@@ -7,17 +7,9 @@ import Add from "./Pages/Addword/Add";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Help from "./Pages/Help/Help";
-//import Add from "./Pages/Add/Add";
-//import ex from "./Pages/Add/ex";
-//import AddWord from "./Pages/Add/AddWord";
-//import Delete from "./Pages/Add/Delete";
-
 import BottomBar from "./components/BottomBar/BottomBar";
 import Logo from "./components/Logo/Logo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-//import { getTopic, getResource, getTopics } from "./api";
-//import { Data } from "./Data";
-//import { useEffect, useState } from "react";
 
 export default function App() {
   return (
