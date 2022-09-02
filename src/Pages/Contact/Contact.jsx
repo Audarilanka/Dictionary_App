@@ -34,7 +34,7 @@ export default function Contact() {
   return (
     <div className="contact-container">
       <div className="box">
-        <p className="contactus">Contact Us</p>
+        <p className="contactus">CONTACT US</p>
         {/* <form className="form" onSubmit={handleSubmit}> */}
         {submited && vaild ? (
           <div className="thanku">We got it.Thank you!</div>
